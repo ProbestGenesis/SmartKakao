@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 export function Hero() {
   return (
-    <section id="about" className="relative min-h-screen pt-24 overflow-hidden bg-background">
+    <section id="home" className="relative min-h-screen pt-24 overflow-hidden bg-background">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <video 

@@ -9,8 +9,10 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { label: 'À propos', href: '#about' },
+    { label: 'Accueil', href: '#home' },
+    { label: 'Problème', href: '#problem' },
     { label: 'Solution', href: '#solution' },
+    { label: 'Cas d’usage', href: '#use-cases' },
     { label: 'Conformité EUDR', href: '#eudr' },
     { label: 'Acteurs', href: '#actors' },
     { label: 'Avantages', href: '#benefits' },

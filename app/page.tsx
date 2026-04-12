@@ -7,10 +7,10 @@ import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { Hero } from '@/components/hero'
 import Ideology from '@/components/ideology'
+import { Problem } from '@/components/problem'
 import { Process } from '@/components/process'
 import { Solution } from '@/components/solution'
-import { Testimonials } from '@/components/testimonials'
-import { UseCases } from '@/components/use-cases'
+import { Stakeholders } from '@/components/stakeholders'
 
 export const metadata = {
   title: 'SmartKakao — Traçabilité blockchain café‑cacao (EUDR)',
@@ -23,22 +23,18 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <Header />
       <Hero />
+      <Problem />
       {/*<Stats />*/}
-      <Features />
-
       <Solution />
-     
+
+      <Features />
       <Eudr />
       <Ideology />
-      {/*  <Partners />*/}
-
-
+      <Stakeholders />
       <Process />
+      {/*  <Partners />*/}
       <FAQ />
-
-
-      <Testimonials />
-
+      {/* <Testimonials />*/}
       <CTA />
       <Contact />
       <Footer />

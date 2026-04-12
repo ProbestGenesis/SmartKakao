@@ -64,8 +64,8 @@ export function Solution() {
               transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
               viewport={{ once: true }}
             >
-              <p className="text-xs font-bold uppercase tracking-[0.25em] text-accent-foreground mb-3">
-                Parcours d’un lot
+              <p className="text-xs font-bold rounded-full border border-transparent bg-accent-foreground w-fit p-1 uppercase tracking-tight  text-primary mb-3">
+                La solution fiable
               </p>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight max-w-2xl">
                 De la parcelle<br />
@@ -79,7 +79,7 @@ export function Solution() {
       <UseCases />
 
 
-      <div className="container mx-auto  px-4 py-16 sm:py-16">
+    {/*  <div className="container mx-auto  px-4 py-16 sm:py-16">
         <motion.div
           initial={{ opacity: 0, scale: 0.97 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -97,7 +97,7 @@ export function Solution() {
             Planifier une démo
           </Button>
         </motion.div>
-      </div>
+      </div>*/}
     </section>
   )
 }
