@@ -14,21 +14,21 @@ const INTERVAL_MS = 10500
 
 const data = [
   {
-    title: 'La forêt est notre fief, protégeons-là',
+    title: 'Anti‑déforestation, preuves terrain',
     description:
-      'Chaque arbre planté est un engagement envers les générations futures. Nous cultivons un avenir durable pour nos communautés locales.',
+      'SmartKakao associe les coordonnées GPS, photos et pièces justificatives à chaque lot pour soutenir la conformité EUDR.',
     image: protect1,
   },
   {
-    title: 'La terre nourrit, respectons-la',
+    title: 'Transparence pour toute la filière',
     description:
-      'Des pratiques agricoles responsables garantissent la santé des sols et la pérennité de nos cultures pour les décennies à venir.',
+      'Du producteur à l’importateur, chaque transfert et regroupement conserve l’historique individuel des lots.',
     image: protect2,
   },
   {
-    title: 'Ensemble, bâtissons un futur vert',
+    title: 'Qualité, confiance, premium',
     description:
-      'La force collective de nos agriculteurs tisse un réseau de résilience face aux grands défis environnementaux de notre époque.',
+      'Une traçabilité vérifiable facilite l’accès aux marchés et à la valorisation (ex. paiement premium) des produits conformes.',
     image: protect3,
   },
 ]
@@ -105,7 +105,7 @@ function Ideology() {
               )}
             >
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-2">
-                
+                Engagement SmartKakao
               </p>
               <h2 className="text-xl sm:text-2xl lg:text-5xl font-bold text-white leading-tight mb-3 drop-shadow-md">
                 {data[idx].title}

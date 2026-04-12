@@ -6,19 +6,19 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards"
 
 const testimonials = [
   {
-    quote: 'La blockchain a transformé notre accès au marché européen. Nous obtenons maintenant des prix équitables avec transparence totale.',
-    name: 'Kwame Mensah',
-    title: 'Producteur de Cacao, Togo',
+    quote: 'Avec SmartKakao, j’enregistre mes récoltes avec GPS et photos. La coopérative et l’exportateur voient tout, et l’importateur vérifie au QR code.',
+    name: 'Koffi',
+    title: 'Producteur, Kpalimé (Togo)',
   },
   {
-    quote: 'Enfin une source fiable et certifiée de cacao premium. Les garanties de qualité et de traçabilité sont incomparables.',
-    name: 'Amelie Dubois',
-    title: 'Chocolaterie Artisanale, France',
+    quote: 'La traçabilité de bout en bout et les preuves EUDR nous font gagner un temps précieux. Nous validons les lots avant expédition, sans ambiguïté.',
+    name: 'CHOCO HOLLAND BV',
+    title: 'Importateur, Rotterdam',
   },
   {
-    quote: 'Le système de contrats intelligents a éliminé les délais de paiement. Nous pouvons maintenant investir plus rapidement dans nos cultures.',
-    name: 'Kofi Mensah',
-    title: 'Coopérative Agricole, Togo',
+    quote: 'Le regroupement de lots conserve l’historique individuel. C’est exactement ce qu’il nous fallait pour industrialiser la collecte sans perdre la traçabilité.',
+    name: 'CACAOKPALIME',
+    title: 'Coopérative, Togo',
   },
 ]
 
@@ -37,7 +37,7 @@ export function Testimonials() {
             Témoignages
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Les producteurs et acheteurs partagent leur succès avec BlockChain Cacao.
+            Producteurs, coopératives et importateurs partagent leur expérience avec SmartKakao.
           </p>
         </motion.div>
 

@@ -34,12 +34,12 @@ export function CTA() {
               <h2 className="text-4xl sm:text-5xl xl:text-6xl font-bold leading-tight">
                 Prêt à transformer
                 <br />
-                <span className="text-accent">votre cacao&nbsp;?</span>
+                <span className="text-accent">votre café‑cacao&nbsp;?</span>
               </h2>
               <p className="text-lg text-background/70 leading-relaxed max-w-lg">
                 Rejoignez des centaines de producteurs et d&apos;acheteurs qui utilisent déjà{' '}
-                <strong className="text-background/90">BlockChain Cacao</strong> pour maximiser
-                leurs profits et garantir la qualité.
+                <strong className="text-background/90">SmartKakao</strong> pour sécuriser la traçabilité,
+                accélérer la vérification et faciliter la conformité EUDR.
               </p>
             </div>
 
@@ -58,7 +58,7 @@ export function CTA() {
 
             {/* Trust indicators */}
             <div className="flex flex-wrap gap-6 text-sm text-background/55 pt-2">
-              {['Accès immédiat', 'Support 24/7', 'Gratuit 30 jours'].map((label) => (
+              {['QR de vérification', 'Certificats EUDR', 'Traçabilité immuable'].map((label) => (
                 <div key={label} className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-accent" />
                   {label}
@@ -85,17 +85,17 @@ export function CTA() {
                 depuis votre poche
               </h3>
               <p className="text-background/60 text-sm leading-relaxed">
-                Suivez vos transactions, consultez les certifications et recevez vos paiements en temps réel, où que vous soyez.
+                Enregistrez vos lots, suivez les transferts, consultez les certificats et partagez des preuves en mobilité.
               </p>
             </div>
 
             {/* Feature list */}
             <ul className="space-y-2.5 text-sm text-background/70">
               {[
-                'Notifications de paiement instantané',
-                'Suivi GPS de vos livraisons',
-                'Certificats téléchargeables hors-ligne',
-                'Tableau de bord de récolte en direct',
+                'Création de lots avec GPS et photos',
+                'Transferts de propriété signés',
+                'QR code pour vérifier l’historique',
+                'Certificats EUDR téléchargeables',
               ].map((feat) => (
                 <li key={feat} className="flex items-start gap-3">
                   <span className="mt-1 w-4 h-4 rounded-full bg-accent/15 flex-shrink-0 flex items-center justify-center">
@@ -145,7 +145,7 @@ export function CTA() {
                   ))}
                 </div>
                 <p className="text-[11px] text-background/50 mt-0.5">
-                  +240 producteurs satisfaits
+                  +240 acteurs satisfaits
                 </p>
               </div>
             </div>

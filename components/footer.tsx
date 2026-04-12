@@ -9,17 +9,17 @@ export function Footer() {
     {
       title: 'Produit',
       links: [
-        { label: 'Plateforme', href: '#' },
-        { label: 'Tarification', href: '#' },
-        { label: 'Sécurité', href: '#' },
+        { label: 'Solution', href: '#solution' },
+        { label: 'Cas d’usage', href: '#use-cases' },
+        { label: 'Conformité EUDR', href: '#eudr' },
       ],
     },
     {
       title: 'Entreprise',
       links: [
-        { label: 'À propos', href: '#' },
-        { label: 'Blog', href: '#' },
-        { label: 'Carrières', href: '#' },
+        { label: 'À propos', href: '#about' },
+        { label: 'Acteurs', href: '#actors' },
+        { label: 'Contact', href: '#contact' },
       ],
     },
     {
@@ -40,12 +40,12 @@ export function Footer() {
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
               <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-xs font-bold text-accent-foreground">BC</span>
+                <span className="text-xs font-bold text-accent-foreground">SK</span>
               </div>
-              <span className="font-semibold">BlockChain Cacao</span>
+              <span className="font-semibold">SmartKakao</span>
             </Link>
             <p className="text-sm text-muted-foreground">
-              Révolutionner le marché du cacao avec la technologie blockchain et la transparence.
+              Traçabilité blockchain café‑cacao du Togo vers l’Europe, avec conformité EUDR.
             </p>
           </div>
 
@@ -72,7 +72,7 @@ export function Footer() {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © {currentYear} BlockChain Cacao. Tous les droits réservés.
+              © {currentYear} SmartKakao. Tous les droits réservés.
             </p>
             <div className="flex gap-6">
               <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">

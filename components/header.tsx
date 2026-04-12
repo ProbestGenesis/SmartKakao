@@ -11,6 +11,8 @@ export function Header() {
   const navItems = [
     { label: 'À propos', href: '#about' },
     { label: 'Solution', href: '#solution' },
+    { label: 'Conformité EUDR', href: '#eudr' },
+    { label: 'Acteurs', href: '#actors' },
     { label: 'Avantages', href: '#benefits' },
     { label: 'Contact', href: '#contact' },
   ]
@@ -20,7 +22,7 @@ export function Header() {
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
           <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-            <span className="text-xs font-bold text-accent-foreground">BC</span>
+            <span className="text-xs font-bold text-accent-foreground">SK</span>
           </div>
           <span className="font-semibold text-sm hidden sm:inline">SmartKakao</span>
         </Link>
@@ -46,9 +48,11 @@ export function Header() {
           >
             Connexion
           </Button>
-          <Button size="sm" className="bg-accent hover:bg-accent/90 text-accent-foreground hidden sm:inline-flex">
-            Commencer
-          </Button>
+          <Link href="#contact" className="hidden sm:inline-flex">
+            <Button size="sm" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+              Demander une démo
+            </Button>
+          </Link>
 
           {/* Mobile Menu Button */}
           <button
@@ -79,7 +83,7 @@ export function Header() {
                   Connexion
                 </Button>
                 <Button size="sm" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-                  Commencer
+                  Demander une démo
                 </Button>
               </div>
             </div>

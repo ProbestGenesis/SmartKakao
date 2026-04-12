@@ -1,20 +1,21 @@
+import { Contact } from '@/components/contact'
+import { CTA } from '@/components/cta'
+import { Eudr } from '@/components/eudr'
+import { FAQ } from '@/components/faq'
+import { Features } from '@/components/features'
+import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { Hero } from '@/components/hero'
-import { Features } from '@/components/features'
-import { Stats } from '@/components/stats'
-import { Solution } from '@/components/solution'
-import { Process } from '@/components/process'
-import { Partners } from '@/components/partners'
-import { Testimonials } from '@/components/testimonials'
-import { FAQ } from '@/components/faq'
-import { CTA } from '@/components/cta'
-import { Contact } from '@/components/contact'
-import { Footer } from '@/components/footer'
 import Ideology from '@/components/ideology'
+import { Process } from '@/components/process'
+import { Solution } from '@/components/solution'
+import { Testimonials } from '@/components/testimonials'
+import { UseCases } from '@/components/use-cases'
 
 export const metadata = {
-  title: 'BlockChain Cacao - Traçabilité du Cacao Togolais',
-  description: 'Révolutionnez la chaîne d\'approvisionnement du cacao avec la technologie blockchain. Connectez les producteurs togolais au marché européen avec transparence totale.',
+  title: 'SmartKakao — Traçabilité blockchain café‑cacao (EUDR)',
+  description:
+    'SmartKakao assure une traçabilité complète et immuable de chaque lot (GPS, poids, photos), du producteur au marché européen, avec certificats EUDR et preuves cryptographiques.',
 }
 
 export default function Home() {
@@ -23,18 +24,21 @@ export default function Home() {
       <Header />
       <Hero />
       {/*<Stats />*/}
-      <Features /> 
-      
+      <Features />
+
       <Solution />
-      <Process />
-     <Ideology />
-    {/*  <Partners />*/}
-    
-      <FAQ />
      
-      
-      <Testimonials /> 
-      
+      <Eudr />
+      <Ideology />
+      {/*  <Partners />*/}
+
+
+      <Process />
+      <FAQ />
+
+
+      <Testimonials />
+
       <CTA />
       <Contact />
       <Footer />

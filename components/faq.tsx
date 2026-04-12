@@ -10,28 +10,28 @@ import {
 
 const faqs = [
   {
-    question: 'Comment fonctionne la blockchain pour le cacao?',
-    answer: 'Chaque étape du cacao (récolte, transformation, expédition) est enregistrée sur la blockchain, créant un registre immuable. Cela garantit l\'authenticité et permet aux acheteurs de vérifier la provenance.',
+    question: 'Comment SmartKakao assure la traçabilité d’un lot ?',
+    answer: 'Chaque lot est enregistré avec des données terrain (GPS, poids, type de produit, photos) puis suivi à chaque transfert de propriété. L’historique devient vérifiable et immuable.',
   },
   {
-    question: 'Quel est le coût pour les producteurs?',
-    answer: 'Notre plateforme est gratuite pour les 30 premiers jours. Après cela, un tarif basé sur le volume s\'applique, généralement 2-3% du prix de vente, soit moins que les intermédiaires traditionnels.',
+    question: 'En quoi cela aide pour l’EUDR (anti‑déforestation) ?',
+    answer: 'SmartKakao structure les preuves (coordonnées, photos, documents) et permet de générer des certificats EUDR et des preuves cryptographiques associées à chaque lot.',
   },
   {
-    question: 'Combien de temps prend la certification?',
-    answer: 'Le processus de certification prend environ 24 heures une fois que tous les documents sont soumis. Les tests de qualité peuvent être accélérés pour un coût supplémentaire.',
+    question: 'Peut-on regrouper des lots sans perdre la traçabilité ?',
+    answer: 'Oui. La coopérative peut créer un lot regroupé tout en conservant la traçabilité individuelle de chaque lot source (chaîne d’agrégation).',
   },
   {
-    question: 'Comment les paiements sont-ils effectués?',
-    answer: 'Les contrats intelligents automatisent les paiements une fois que les critères de qualité sont atteints. Les fonds sont transférés directement au compte du producteur dans les 48 heures.',
+    question: 'Comment un importateur européen vérifie-t-il l’historique ?',
+    answer: 'Via un QR code ou un identifiant, l’importateur consulte instantanément le parcours complet et les éléments de preuve associés.',
   },
   {
-    question: 'Puis-je utiliser la plateforme si je suis en Europe?',
-    answer: 'Oui! Les acheteurs européens peuvent s\'inscrire gratuitement pour accéder au marché du cacao certifié blockchain avec traçabilité complète.',
+    question: 'La plateforme couvre café et cacao ?',
+    answer: 'Oui. SmartKakao est conçu pour la filière café‑cacao: les lots peuvent être typés (café / cacao) et suivis avec les mêmes garanties de traçabilité.',
   },
   {
-    question: 'Quel niveau de technologie est requis?',
-    answer: 'Basique! Il suffit d\'une connexion Internet et d\'un téléphone smartphone. Notre interface est conçue pour être accessible même avec une connectivité lente.',
+    question: 'Quel niveau de technologie est requis sur le terrain ?',
+    answer: 'Basique: un smartphone et une connexion Internet. L’expérience est pensée pour rester utilisable avec une connectivité limitée.',
   },
 ]
 

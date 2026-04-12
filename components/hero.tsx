@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen pt-24 overflow-hidden bg-background">
+    <section id="about" className="relative min-h-screen pt-24 overflow-hidden bg-background">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <video 
@@ -40,45 +40,52 @@ export function Hero() {
               <div className="space-y-4">
                 <div className="inline-block px-4 py-2 bg-accent/10 rounded-full border border-accent/20">
                   <span className="text-white text-sm font-medium">
-                    Traçabilité blockchain innovante
+                    Traçabilité blockchain • Conformité EUDR
                   </span>
                 </div>
 
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight tracking-tighter text-white">
-                  Cacao du Togo, Qualité Certifiée
+                  SmartKakao
+                  <span className="block text-2xl sm:text-3xl lg:text-4xl font-semibold text-white/85 mt-3">
+                    Traçabilité café‑cacao, du champ à l’Europe
+                  </span>
                 </h1>
 
                 <p className="text-lg sm:text-xl text-white leading-relaxed tracking-tighter  max-w-lg">
-                  Révolutionnez la chaîne d&apos;approvisionnement du cacao avec la technologie blockchain. Garantissez l&apos;authenticité et la traçabilité totale du Togo jusqu&apos;à l&apos;Europe.
+                  Enregistrez chaque lot (GPS, poids, photos), transférez la propriété entre acteurs,
+                  vérifiez l’historique via QR code, et générez automatiquement des certificats EUDR
+                  et preuves cryptographiques.
                 </p>
               </div>
 
               <div className="flex flex-col justify-end sm:flex-row gap-4">
                 <Link href="#contact">
                   <Button className="w-full rounded-full sm:w-auto h-12 bg-accent hover:bg-accent/90 text-accent-foreground font-medium">
-                    Découvrir la solution
+                    Demander une démo
                   </Button>
                 </Link>
-                <Button
-                  variant="outline"
-                  className="w-full rounded-full sm:w-auto h-12"
-                >
-                  Voir la démo
-                </Button>
+                <Link href="#solution">
+                  <Button
+                    variant="outline"
+                    className="w-full rounded-full sm:w-auto h-12"
+                  >
+                    Voir le parcours d’un lot
+                  </Button>
+                </Link>
               </div>
 
               <div className="flex items-center justify-center gap-8 text-sm">
                 <div>
-                  <div className="font-bold text-2xl text-gray-200">100%</div>
-                  <div className="text-muted-foreground">Traçabilité</div>
+                  <div className="font-bold text-2xl text-gray-200">Lot</div>
+                  <div className="text-muted-foreground">Identité unique</div>
                 </div>
                 <div>
-                  <div className="font-bold text-2xl text-gray-200">24h</div>
-                  <div className="text-muted-foreground">Certifications</div>
+                  <div className="font-bold text-2xl text-gray-200">QR</div>
+                  <div className="text-muted-foreground">Vérification</div>
                 </div>
                 <div>
-                  <div className="font-bold text-2xl text-gray-200">50+</div>
-                  <div className="text-muted-foreground">Producteurs</div>
+                  <div className="font-bold text-2xl text-gray-200">EUDR</div>
+                  <div className="text-muted-foreground">Preuves</div>
                 </div>
               </div>
             </div>

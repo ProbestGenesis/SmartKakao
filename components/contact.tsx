@@ -41,7 +41,7 @@ export function Contact() {
                 Contactez-Nous
               </h2>
               <p className="text-lg text-muted-foreground">
-                Nous sommes prêts à vous aider à rejoindre la révolution blockchain du cacao.
+                Parlons de votre besoin de traçabilité café‑cacao et de conformité EUDR.
               </p>
             </div>
 
@@ -52,8 +52,8 @@ export function Contact() {
                 </div>
                 <div>
                   <div className="font-semibold text-foreground">Email</div>
-                  <a href="mailto:hello@blockchaincacao.tg" className="text-muted-foreground hover:text-accent transition-colors">
-                    hello@blockchaincacao.tg
+                  <a href="mailto:hello@smartkakao.tg" className="text-muted-foreground hover:text-accent transition-colors">
+                    hello@smartkakao.tg
                   </a>
                 </div>
               </div>

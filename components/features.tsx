@@ -7,18 +7,18 @@ import WorldMap from "@/components/ui/world-map"
 const simplifiedFeatures = [
   {
     icon: Globe,
-    title: 'Accès Direct au Marché Européen',
-    description: 'Connectez-vous directement aux chocolatiers européens sans intermédiaires, maximisant ainsi vos revenus par récolte.',
+    title: 'Vérification instantanée (QR / ID)',
+    description: 'Importateurs et auditeurs consultent l’historique complet d’un lot en un scan, du producteur à l’export.',
   },
   {
     icon: Zap,
-    title: 'Paiements Instantanés & Sécurisés',
-    description: "Recevez vos fonds dès que la qualité est certifiée grâce à l'automatisation des contrats intelligents sur la blockchain.",
+    title: 'Transferts de propriété sécurisés',
+    description: "Chaque changement de propriétaire (agriculteur → coopérative → transformateur → exportateur) est horodaté et immuable.",
   },
   {
     icon: ShieldCheck,
-    title: 'Confiance & Traçabilité Numérique',
-    description: "Valorisez votre production avec un certificat d'origine immuable, garantie indispensable pour l'exportation premium.",
+    title: 'Conformité EUDR & preuves',
+    description: "Générez des certificats EUDR et des preuves cryptographiques (GPS, photos, pièces) pour faciliter la conformité anti‑déforestation.",
   },
 ]
 
@@ -100,12 +100,12 @@ export function Features() {
             className="mb-10"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground leading-tight tracking-tight">
-              Propulsez votre récolte sur la{' '}
-              <span className="text-accent">scène mondiale</span>
+              Une traçabilité prête pour{' '}
+              <span className="text-accent">l’export</span>
             </h2>
             <p className="text-base text-muted-foreground max-w-lg">
-              Notre solution blockchain élimine les barrières de l&apos;exportation
-              pour les cultivateurs africains, garantissant transparence et prospérité.
+              SmartKakao relie la filière café‑cacao du Togo au marché européen avec une
+              chaîne de preuves vérifiable, du champ jusqu’à l’importateur.
             </p>
           </motion.div>
 

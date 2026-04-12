@@ -6,23 +6,23 @@ import { CheckCircle, Leaf, Package, TrendingUp } from 'lucide-react'
 const processSteps = [
   {
     icon: Leaf,
-    title: 'Production',
-    description: 'Producteurs enregistrent et cultivent le cacao certifié',
+    title: 'Collecte terrain',
+    description: 'Enregistrement GPS, photos, poids et type de produit pour chaque lot',
   },
   {
     icon: CheckCircle,
-    title: 'Vérification',
-    description: 'Tests qualité et certification blockchain',
+    title: 'Contrôles & preuves',
+    description: 'Pièces justificatives, contrôle qualité et chaîne de preuves immuable',
   },
   {
     icon: Package,
-    title: 'Expédition',
-    description: 'Traçage en temps réel jusqu\'au client européen',
+    title: 'Chaîne logistique',
+    description: 'Transferts, regroupements, transport: tout est traçable jusqu’à l’Europe',
   },
   {
     icon: TrendingUp,
-    title: 'Paiement',
-    description: 'Contrats intelligents automatisent le règlement',
+    title: 'Valorisation',
+    description: 'Certification et accès au premium (ex. +15%) pour les lots conformes',
   },
 ]
 
@@ -38,10 +38,10 @@ export function Process() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
-            Notre Processus Certifié
+            Une traçabilité de bout en bout
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Quatre étapes simples pour connecter producteurs et acheteurs.
+            Des étapes claires, des preuves vérifiables, et une conformité EUDR intégrée au flux.
           </p>
         </motion.div>
 
