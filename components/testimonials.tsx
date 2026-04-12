@@ -2,25 +2,23 @@
 
 import { motion } from "motion/react"
 import { Star } from 'lucide-react'
+import { InfiniteMovingCards } from "./ui/infinite-moving-cards"
 
 const testimonials = [
   {
     quote: 'La blockchain a transformé notre accès au marché européen. Nous obtenons maintenant des prix équitables avec transparence totale.',
-    author: 'Kwame Mensah',
-    role: 'Producteur de Cacao, Togo',
-    rating: 5,
+    name: 'Kwame Mensah',
+    title: 'Producteur de Cacao, Togo',
   },
   {
     quote: 'Enfin une source fiable et certifiée de cacao premium. Les garanties de qualité et de traçabilité sont incomparables.',
-    author: 'Amelie Dubois',
-    role: 'Chocolaterie Artisanale, France',
-    rating: 5,
+    name: 'Amelie Dubois',
+    title: 'Chocolaterie Artisanale, France',
   },
   {
     quote: 'Le système de contrats intelligents a éliminé les délais de paiement. Nous pouvons maintenant investir plus rapidement dans nos cultures.',
-    author: 'Kofi Mensah',
-    role: 'Coopérative Agricole, Togo',
-    rating: 5,
+    name: 'Kofi Mensah',
+    title: 'Coopérative Agricole, Togo',
   },
 ]
 
@@ -43,38 +41,13 @@ export function Testimonials() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={testimonial.author}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1 + index * 0.1 }}
-              viewport={{ once: true, amount: 0.3 }}
-              className="p-8 rounded-2xl border border-border bg-card"
-            >
-              <div className="flex gap-1 mb-4">
-                {Array.from({ length: testimonial.rating }).map((_, i) => (
-                  <Star
-                    key={i}
-                    className="w-5 h-5 fill-accent text-accent"
-                  />
-                ))}
-              </div>
-              <blockquote className="text-lg mb-6 text-foreground leading-relaxed">
-                &quot;{testimonial.quote}&quot;
-              </blockquote>
-              <div>
-                <div className="font-semibold text-foreground">
-                  {testimonial.author}
-                </div>
-                <div className="text-sm text-muted-foreground">
-                  {testimonial.role}
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+        <div className="relative flex flex-col items-center justify-center overflow-hidden rounded-md antialiased min-h-[300px]">
+          <InfiniteMovingCards
+            items={testimonials}
+            direction="right"
+            speed="slow"
+        />
+    </div>
       </div>
     </section>
   )

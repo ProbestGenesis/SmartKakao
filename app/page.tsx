@@ -10,6 +10,7 @@ import { FAQ } from '@/components/faq'
 import { CTA } from '@/components/cta'
 import { Contact } from '@/components/contact'
 import { Footer } from '@/components/footer'
+import Ideology from '@/components/ideology'
 
 export const metadata = {
   title: 'BlockChain Cacao - Traçabilité du Cacao Togolais',
@@ -21,13 +22,19 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <Header />
       <Hero />
-      <Stats />
-      <Features />
-      <Process />
+      {/*<Stats />*/}
+      <Features /> 
+      
       <Solution />
-      <Partners />
-      <Testimonials />
+      <Process />
+     <Ideology />
+    {/*  <Partners />*/}
+    
       <FAQ />
+     
+      
+      <Testimonials /> 
+      
       <CTA />
       <Contact />
       <Footer />

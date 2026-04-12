@@ -1,84 +1,150 @@
 'use client'
 
 import { motion } from "motion/react"
-import { Shield, Link as LinkIcon, Zap, Globe, Lock, TrendingUp } from 'lucide-react'
+import { Globe, Zap, ShieldCheck } from 'lucide-react'
+import WorldMap from "@/components/ui/world-map"
 
-const features = [
+const simplifiedFeatures = [
   {
-    icon: Shield,
-    title: 'Authenticité Vérifiée',
-    description: 'Chaque cacao est enregistré sur la blockchain, garantissant son authenticité et son origine togolaise.',
-  },
-  {
-    icon: LinkIcon,
-    title: 'Traçabilité Complète',
-    description: 'Suivez chaque étape du voyage du cacao du producteur togolais jusqu\'au marché européen.',
+    icon: Globe,
+    title: 'Accès Direct au Marché Européen',
+    description: 'Connectez-vous directement aux chocolatiers européens sans intermédiaires, maximisant ainsi vos revenus par récolte.',
   },
   {
     icon: Zap,
-    title: 'Transactions Rapides',
-    description: 'Eliminé les intermédiaires avec des contrats intelligents, accélérant le paiement aux producteurs.',
+    title: 'Paiements Instantanés & Sécurisés',
+    description: "Recevez vos fonds dès que la qualité est certifiée grâce à l'automatisation des contrats intelligents sur la blockchain.",
   },
   {
-    icon: Globe,
-    title: 'Marché Global',
-    description: 'Connectez directement les producteurs togolais avec les acheteurs européens certifiés.',
+    icon: ShieldCheck,
+    title: 'Confiance & Traçabilité Numérique',
+    description: "Valorisez votre production avec un certificat d'origine immuable, garantie indispensable pour l'exportation premium.",
+  },
+]
+
+const tradeRoutes = [
+  {
+    start: { lat: 6.1256, lng: 1.2254, label: "Lomé" },
+    end: { lat: 48.8566, lng: 2.3522, label: "Paris" },
   },
   {
-    icon: Lock,
-    title: 'Sécurité Maximale',
-    description: 'Technologie blockchain immuable pour protéger la qualité et les données des transactions.',
+    start: { lat: 5.3600, lng: -4.0083, label: "Abidjan" },
+    end: { lat: 50.8503, lng: 4.3517, label: "Bruxelles" },
   },
   {
-    icon: TrendingUp,
-    title: 'Valeur Accrue',
-    description: 'Les produits certifiés blockchain obtiennent une prime de 20-30% sur le marché européen.',
+    start: { lat: 5.6037, lng: -0.1870, label: "Accra" },
+    end: { lat: 47.3769, lng: 8.5417, label: "Bern" },
   },
 ]
 
 export function Features() {
   return (
-    <section id="benefits" className="py-20 sm:py-32 bg-background border-t border-border">
+    <section
+      id="benefits"
+      className="py-20 sm:py-32 bg-background border-t border-border overflow-hidden"
+    >
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          viewport={{ once: true, amount: 0.3 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
-            Avantages de la Blockchain
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Une approche globale pour moderniser le marché du cacao africain avec technologie et intégrité.
-          </p>
-        </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => {
-            const Icon = feature.icon
-            return (
-              <motion.div
-                key={feature.title}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 + index * 0.05 }}
-                viewport={{ once: true, amount: 0.3 }}
-                className="p-8 rounded-2xl border border-border bg-card hover:border-accent/50 hover:shadow-lg transition-all duration-300 group"
-              >
-                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
-                  <Icon className="w-6 h-6 text-accent" />
+        {/* ── FLOAT WRAPPER ──────────────────────────────────────────────
+            On md+, the map card floats right so text flows around it.
+            clearfix keeps the section height correct.
+        ──────────────────────────────────────────────────────────────── */}
+        <div className="clearfix">
+
+          {/* ── MAP CARD — floated right on md+ ── */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.92, y: 24 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 1.1, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: true }}
+            /* float:right on md+, full width on mobile, sits below header */
+            className="
+              w-full mb-10
+              md:float-right md:w-[52%] md:ml-10 md:mb-8
+              lg:w-[55%] lg:ml-14
+            "
+          >
+            <div className="relative">
+              {/* Glow blob */}
+              <div className="absolute inset-0 bg-accent/10 blur-[90px] rounded-full pointer-events-none" />
+
+              {/* Card */}
+              <div className="relative bg-card/20 backdrop-blur-md rounded-[2rem] p-4 sm:p-8 border border-accent/10 shadow-2xl shadow-accent/5">
+                <WorldMap dots={tradeRoutes} lineColor="var(--color-accent)" />
+              </div>
+
+              {/* Legend */}
+              <div className="mt-4 flex justify-between px-2">
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+                  <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent/80">
+                    Afrique • Origine
+                  </span>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-foreground">
-                  {feature.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {feature.description}
-                </p>
-              </motion.div>
-            )
-          })}
+                <div className="flex items-center gap-2">
+                  <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent/80">
+                    Europe • Marché
+                  </span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* ── HEADER — sits left of map on md+ ── */}
+          <motion.div
+            initial={{ opacity: 0, x: -32 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.75 }}
+            viewport={{ once: true }}
+            className="mb-10"
+          >
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground leading-tight tracking-tight">
+              Propulsez votre récolte sur la{' '}
+              <span className="text-accent">scène mondiale</span>
+            </h2>
+            <p className="text-base text-muted-foreground max-w-lg">
+              Notre solution blockchain élimine les barrières de l&apos;exportation
+              pour les cultivateurs africains, garantissant transparence et prospérité.
+            </p>
+          </motion.div>
+
+          {/* ── FEATURE CARDS — flow naturally around the floated map ── */}
+          <div className="space-y-4">
+            {simplifiedFeatures.map((feature, index) => {
+              const Icon = feature.icon
+              return (
+                <motion.div
+                  key={feature.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.1 + index * 0.12 }}
+                  viewport={{ once: true }}
+                  className="
+                    flex gap-4 p-4 rounded-xl
+                    border border-transparent
+                    hover:border-border hover:bg-card/50
+                    transition-all group cursor-default
+                  "
+                >
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                    <Icon className="w-5 h-5 text-accent" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-1 text-foreground group-hover:text-accent transition-colors">
+                      {feature.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed text-sm">
+                      {feature.description}
+                    </p>
+                  </div>
+                </motion.div>
+              )
+            })}
+          </div>
+
+          {/* clearfix sentinel — ensures the float is contained */}
+          <div className="clear-both" />
         </div>
       </div>
     </section>

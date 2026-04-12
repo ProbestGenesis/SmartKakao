@@ -44,11 +44,11 @@ export function Hero() {
                   </span>
                 </div>
 
-                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight text-white">
+                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight tracking-tighter text-white">
                   Cacao du Togo, Qualité Certifiée
                 </h1>
 
-                <p className="text-lg sm:text-xl text-white leading-relaxed max-w-lg">
+                <p className="text-lg sm:text-xl text-white leading-relaxed tracking-tighter  max-w-lg">
                   Révolutionnez la chaîne d&apos;approvisionnement du cacao avec la technologie blockchain. Garantissez l&apos;authenticité et la traçabilité totale du Togo jusqu&apos;à l&apos;Europe.
                 </p>
               </div>
