@@ -31,7 +31,7 @@ export default function Home() {
       <Eudr />
       <Ideology />
       <Stakeholders />
-      <Process />
+     {/* <Process />*/}
       {/*  <Partners />*/}
       <FAQ />
       {/* <Testimonials />*/}

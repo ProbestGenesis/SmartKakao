@@ -44,7 +44,8 @@ export function Solution() {
           src={solutionApperçu}
           alt="Aperçu de la solution SmartKakao"
           fill
-          priority
+          quality={75}
+          loading="lazy"
           className="object-cover object-top"
           sizes="100vw"
         />
