@@ -2,37 +2,46 @@
 
 import { motion } from 'motion/react'
 import { User, Warehouse, Factory, Ship, BadgeCheck } from 'lucide-react'
-
+import cooperativeImage from "@/public/assets/cooperative.jpg"
+import farmerImage from "@/public/assets/agriculteur.jpg"
+import transformerImage from "@/public/assets/transformateur.jpg"
+import exporterImage from "@/public/assets/port.jpg"
+import supermarketImage from "@/public/assets/supermarket.jpg"
 const actors = [
   {
     icon: User,
     title: 'Agriculteurs',
     description: 'Enregistrent les récoltes et lots (GPS, photos, poids) sur le terrain.',
     example: 'Ex: Koffi (Kpalimé)',
+    image: farmerImage,
   },
   {
     icon: Warehouse,
     title: 'Coopératives',
     description: 'Collectent, contrôlent, regroupent des lots, et maintiennent la traçabilité individuelle.',
     example: 'Ex: CACAOKPALIME',
+    image: cooperativeImage,
   },
   {
     icon: Factory,
     title: 'Transformateurs',
     description: 'Fermentation, contrôle qualité et préparation, avec enregistrement des étapes clés.',
     example: 'Acteur de transformation',
+    image: transformerImage,
   },
   {
     icon: Ship,
     title: 'Exportateurs',
     description: 'Conditionnent, expédient et assurent la continuité de traçabilité jusqu’au port et au transport.',
     example: 'Ex: TOGO EXPORT',
+    image: exporterImage,
   },
   {
     icon: BadgeCheck,
     title: 'Importateurs européens',
     description: 'Vérifient l’historique, les preuves et la conformité EUDR avant achat et mise sur le marché.',
     example: 'Ex: CHOCO HOLLAND BV',
+    image: supermarketImage,
   },
 ]
 

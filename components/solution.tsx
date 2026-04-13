@@ -5,6 +5,7 @@ import { motion } from "motion/react"
 import { Button } from '@/components/ui/button'
 import solutionApperçu from "@/public/assets/apperçu.png"
 import { UseCases } from "./use-cases"
+import { DecorativeBubbles } from "./decorative-bubbles"
 
 const steps = [
   {
@@ -31,12 +32,23 @@ const steps = [
 
 export function Solution() {
   return (
-    <section id="solution" className=" overflow-hidden">
+    <section id="solution" className="relative overflow-hidden">
+      <DecorativeBubbles
+        count={3}
+        colors={['bg-cacao-500', 'bg-cacao-300', 'bg-accent/35']}
+        minSize={80}
+        maxSize={220}
+        positions={[
+          { top: '20%', left: '5%' },
+          { bottom: '10%', left: '8%' },
+          { top: '65%', left: '10%' },
+        ]}
+      />
 
       {/* ── HERO IMAGE BLOCK ──────────────────────────────────────────
           The image fills the full viewport width and dominates.
           Title is overlaid at the bottom-left for magazine impact.
-      ────────────────────────────────────────────────────────────── */}
+       ────────────────────────────────────────────────────────────── */}
       <div className="relative w-full h-[60vh] sm:h-[70vh] lg:h-[80vh]">
 
         {/* Photo — object-cover fills the frame, top-anchored for faces/crops */}

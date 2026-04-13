@@ -2,6 +2,7 @@
 
 import { motion } from 'motion/react'
 import { Leaf, Repeat, QrCode, Layers } from 'lucide-react'
+import { DecorativeBubbles } from './decorative-bubbles'
 
 const useCases = [
   {
@@ -29,7 +30,8 @@ const useCases = [
 
 export function UseCases() {
   return (
-    <section id="use-cases" className="py-20 sm:py-32 bg-background border-t border-border">
+    <section id="use-cases" className="relative py-20 sm:py-32 bg-background border-t border-border">
+     
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {useCases.map((uc, index) => {

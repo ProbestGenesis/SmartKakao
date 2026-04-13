@@ -39,6 +39,11 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-cacao-900: #6B4423;
+  --color-cacao-700: #8B6F47;
+  --color-cacao-500: #A0845A;
+  --color-cacao-400: #D4A574;
+  --color-cacao-300: #F4A460;
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
