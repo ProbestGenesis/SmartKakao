@@ -40,7 +40,7 @@ export function Solution() {
         maxSize={220}
         positions={[
           { top: '20%', left: '5%' },
-          { bottom: '10%', left: '8%' },
+          { bottom: '10%', right: '8%' },
           { top: '65%', left: '10%' },
         ]}
       />

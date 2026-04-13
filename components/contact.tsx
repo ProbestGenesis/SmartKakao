@@ -29,11 +29,11 @@ export function Contact() {
     <section id="contact" className="relative py-20 sm:py-32 bg-background border-t border-border">
       <DecorativeBubbles
         count={2}
-        colors={['bg-orange-400', 'bg-accent/40']}
+        colors={['bg-cacao-400', 'bg-accent/40']}
         minSize={60}
         maxSize={160}
         positions={[
-          { top: '10%', left: '6%' },
+          { bottom: '10%', left: '6%' },
           { bottom: '15%', right: '7%' },
         ]}
       />
