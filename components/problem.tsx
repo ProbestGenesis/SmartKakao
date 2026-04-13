@@ -2,6 +2,7 @@
 
 import { motion } from 'motion/react'
 import { AlertTriangle, FileSearch, Link2, ShieldCheck } from 'lucide-react'
+import { DecorativeBubbles } from './decorative-bubbles'
 
 const painPoints = [
   {
@@ -34,6 +35,17 @@ export function Problem() {
   return (
     <section id="problem" className="py-20 sm:py-32 bg-background border-t border-border">
       <div className="container mx-auto px-4 relative">
+        <DecorativeBubbles
+          count={3}
+          colors={['bg-cacao-500', 'bg-cacao-400', 'bg-accent/40']}
+          minSize={60}
+          maxSize={180}
+          positions={[
+            { top: '10%', right: '5%' },
+            { bottom: '15%', left: '8%' },
+            { top: '50%', right: '2%' },
+          ]}
+        />
 
         <AlertTriangle color='red' size={"80"} className='absolute -top-10 right-6 rotate-12 z-10 ' />
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">

@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { motion } from "motion/react"
 import { Button } from '@/components/ui/button'
 import { Mail, Phone, MapPin } from 'lucide-react'
+import { DecorativeBubbles } from "./decorative-bubbles"
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -25,7 +26,18 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 sm:py-32 bg-background border-t border-border">
+    <section id="contact" className="relative py-20 sm:py-32 bg-background border-t border-border">
+      <DecorativeBubbles
+        count={2}
+        colors={['bg-cacao-400', 'bg-accent/40']}
+        minSize={60}
+        maxSize={160}
+        positions={[
+          { bottom: '10%', left: '6%' },
+          { bottom: '15%', right: '7%' },
+        ]}
+      />
+
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Info */}

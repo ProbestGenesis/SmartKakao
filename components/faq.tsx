@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { DecorativeBubbles } from "./decorative-bubbles"
 
 const faqs = [
   {
@@ -37,7 +38,18 @@ const faqs = [
 
 export function FAQ() {
   return (
-    <section className="py-20 sm:py-32 bg-background border-t border-border">
+    <section className="relative py-20 sm:py-32 bg-background border-t border-border">
+      <DecorativeBubbles
+        count={2}
+        colors={['bg-cacao-400', 'bg-accent/35']}
+        minSize={50}
+        maxSize={170}
+        positions={[
+          { top: '25%', right: '8%' },
+          { bottom: '30%', left: '5%' },
+        ]}
+      />
+
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Section Title Grid */}

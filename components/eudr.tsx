@@ -2,6 +2,7 @@
 
 import { motion } from 'motion/react'
 import { FileCheck2, MapPin, Shield, Fingerprint } from 'lucide-react'
+import { DecorativeBubbles } from './decorative-bubbles'
 
 const pillars = [
   {
@@ -28,7 +29,19 @@ const pillars = [
 
 export function Eudr() {
   return (
-    <section id="eudr" className="py-20 sm:py-32 bg-muted/30 border-t border-border">
+    <section id="eudr" className="relative py-20 sm:py-32 bg-muted/30 border-t border-border">
+      <DecorativeBubbles
+        count={3}
+        colors={['bg-cacao-500', 'bg-cacao-400', 'bg-accent/40']}
+        minSize={60}
+        maxSize={190}
+        positions={[
+          { top: '10%', left: '5%' },
+          { bottom: '15%', right: '6%' },
+          { top: '55%', right: '3%' },
+        ]}
+      />
+
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 28 }}

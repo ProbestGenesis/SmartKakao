@@ -3,6 +3,7 @@
 import { motion } from "motion/react"
 import { Globe, Zap, ShieldCheck } from 'lucide-react'
 import WorldMap from "@/components/ui/world-map"
+import { DecorativeBubbles } from "./decorative-bubbles"
 
 const simplifiedFeatures = [
   {
@@ -41,8 +42,19 @@ export function Features() {
   return (
     <section
       id="benefits"
-      className="py-20 sm:py-32 bg-background border-t border-border overflow-hidden"
+      className="relative py-20 sm:py-32 bg-background border-t border-border overflow-hidden"
     >
+      <DecorativeBubbles
+        count={2}
+        colors={['bg-cacao-400', 'bg-accent/45']}
+        minSize={70}
+        maxSize={200}
+        positions={[
+          { top: '15%', right: '6%' },
+          { bottom: '20%', left: '4%' },
+        ]}
+      />
+
       <div className="container mx-auto px-4">
 
         {/* ── FLOAT WRAPPER ──────────────────────────────────────────────

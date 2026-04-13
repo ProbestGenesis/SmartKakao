@@ -6,6 +6,7 @@ import { ArrowRight, Star } from 'lucide-react'
 import appleBadge from "@/public/assets/appleStore.svg"
 import googleBadge from "@/public/assets/googlePlay.svg"
 import Image from "next/image"
+import { DecorativeBubbles } from "./decorative-bubbles"
 
 
 /* ── Mock review avatars ────────────────────────────────────────────── */
@@ -18,7 +19,19 @@ const avatars = [
 
 export function CTA() {
   return (
-    <section className="py-20 sm:py-32 bg-foreground text-background overflow-hidden">
+    <section className="relative py-20 sm:py-32 bg-foreground text-background overflow-hidden">
+      <DecorativeBubbles
+        count={3}
+        colors={['bg-cacao-300', 'bg-accent/50', 'bg-cacao-400']}
+        minSize={80}
+        maxSize={210}
+        positions={[
+          { top: '5%', left: '8%' },
+          { bottom: '10%', right: '5%' },
+          { top: '40%', right: '10%' },
+        ]}
+      />
+
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
