@@ -51,7 +51,7 @@ export function CTA() {
               </h2>
               <p className="text-lg text-background/70 leading-relaxed max-w-lg">
                 Rejoignez des centaines de producteurs et d&apos;acheteurs qui utilisent déjà{' '}
-                <strong className="text-background/90">SmartKakao</strong> pour sécuriser la traçabilité,
+                <strong className="text-background/90">ChainCacao</strong> pour sécuriser la traçabilité,
                 accélérer la vérification et faciliter la conformité EUDR.
               </p>
             </div>

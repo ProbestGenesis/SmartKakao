@@ -116,7 +116,7 @@ export function Features() {
               <span className="text-accent">l’export</span>
             </h2>
             <p className="text-base text-muted-foreground max-w-lg">
-              SmartKakao relie la filière café‑cacao du Togo au marché européen avec une
+              ChainCacao relie la filière café‑cacao du Togo au marché européen avec une
               chaîne de preuves vérifiable, du champ jusqu’à l’importateur.
             </p>
           </motion.div>

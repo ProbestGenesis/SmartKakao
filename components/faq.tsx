@@ -11,12 +11,12 @@ import { DecorativeBubbles } from "./decorative-bubbles"
 
 const faqs = [
   {
-    question: 'Comment SmartKakao assure la traçabilité d’un lot ?',
+    question: 'Comment ChainCacao assure la traçabilité d’un lot ?',
     answer: 'Chaque lot est enregistré avec des données terrain (GPS, poids, type de produit, photos) puis suivi à chaque transfert de propriété. L’historique devient vérifiable et immuable.',
   },
   {
     question: 'En quoi cela aide pour l’EUDR (anti‑déforestation) ?',
-    answer: 'SmartKakao structure les preuves (coordonnées, photos, documents) et permet de générer des certificats EUDR et des preuves cryptographiques associées à chaque lot.',
+    answer: 'ChainCacao structure les preuves (coordonnées, photos, documents) et permet de générer des certificats EUDR et des preuves cryptographiques associées à chaque lot.',
   },
   {
     question: 'Peut-on regrouper des lots sans perdre la traçabilité ?',
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     question: 'La plateforme couvre café et cacao ?',
-    answer: 'Oui. SmartKakao est conçu pour la filière café‑cacao: les lots peuvent être typés (café / cacao) et suivis avec les mêmes garanties de traçabilité.',
+    answer: 'Oui. ChainCacao est conçu pour la filière café‑cacao: les lots peuvent être typés (café / cacao) et suivis avec les mêmes garanties de traçabilité.',
   },
   {
     question: 'Quel niveau de technologie est requis sur le terrain ?',
@@ -64,7 +64,7 @@ export function FAQ() {
               Questions Fréquentes
             </h2>
             <p className="text-lg text-muted-foreground max-w-md">
-              Trouvez les réponses aux questions les plus posées sur SmartKakao et notre solution de traçabilité.
+              Trouvez les réponses aux questions les plus posées sur ChainCacao et notre solution de traçabilité.
             </p>
             
             <motion.div

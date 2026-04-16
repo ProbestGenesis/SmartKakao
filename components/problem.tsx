@@ -71,7 +71,7 @@ export function Problem() {
 
             <div className="rounded-2xl border border-accent/20 bg-accent/5 p-6">
               <p className="text-sm text-foreground/90 leading-relaxed">
-                SmartKakao est né pour transformer des informations éparses en une{' '}
+                ChainCacao est né pour transformer des informations éparses en une{' '}
                 <span className="font-semibold">chaîne de preuves</span> consultable instantanément (QR/ID),
                 de la parcelle de l’agriculteur jusqu’à l’importateur européen.
               </p>

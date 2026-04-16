@@ -6,7 +6,7 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards"
 
 const testimonials = [
   {
-    quote: 'Avec SmartKakao, j’enregistre mes récoltes avec GPS et photos. La coopérative et l’exportateur voient tout, et l’importateur vérifie au QR code.',
+    quote: 'Avec ChainCacao, j’enregistre mes récoltes avec GPS et photos. La coopérative et l’exportateur voient tout, et l’importateur vérifie au QR code.',
     name: 'Koffi',
     title: 'Producteur, Kpalimé (Togo)',
   },
@@ -37,7 +37,7 @@ export function Testimonials() {
             Témoignages
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Producteurs, coopératives et importateurs partagent leur expérience avec SmartKakao.
+            Producteurs, coopératives et importateurs partagent leur expérience avec ChainCacao.
           </p>
         </motion.div>
 

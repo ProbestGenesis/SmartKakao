@@ -45,7 +45,9 @@ export function Hero() {
                 </div>
 
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight tracking-tighter text-white">
-                  SmartKakao
+                 <strong className='text-primary'>
+                   ChainCacao
+                  </strong>
                   <span className="block text-2xl sm:text-3xl lg:text-4xl font-semibold text-white/85 mt-3">
                     Traçabilité café‑cacao, du champ à l’Europe
                   </span>
@@ -58,21 +60,7 @@ export function Hero() {
                 </p>
               </div>
 
-              <div className="flex flex-col justify-end sm:flex-row gap-4">
-                <Link href="#contact">
-                  <Button className="w-full rounded-full sm:w-auto h-12 bg-accent hover:bg-accent/90 text-accent-foreground font-medium">
-                    Demander une démo
-                  </Button>
-                </Link>
-                <Link href="#solution">
-                  <Button
-                    variant="outline"
-                    className="w-full rounded-full sm:w-auto h-12"
-                  >
-                    Voir le parcours d’un lot
-                  </Button>
-                </Link>
-              </div>
+           ¨¨
 
               <div className="flex items-center justify-center gap-8 text-sm">
                 <div>

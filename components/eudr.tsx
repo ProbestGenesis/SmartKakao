@@ -57,7 +57,7 @@ export function Eudr() {
             EUDR: anti‑déforestation, preuves vérifiables
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl">
-            SmartKakao organise les données et les preuves autour de chaque lot afin de faciliter la conformité EUDR
+            ChainCacao organise les données et les preuves autour de chaque lot afin de faciliter la conformité EUDR
             et la vérification par les acheteurs européens.
           </p>
         </motion.div>

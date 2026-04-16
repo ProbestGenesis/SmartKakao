@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'SmartKakao — Traçabilité blockchain café‑cacao (EUDR)',
+  title: 'ChainCacao — Traçabilité blockchain café‑cacao (EUDR)',
   description:
-    'SmartKakao est une plateforme de traçabilité blockchain pour la filière café‑cacao au Togo, conforme EUDR (anti‑déforestation).',
+    'ChainCacao est une plateforme de traçabilité blockchain pour la filière café‑cacao au Togo, conforme EUDR (anti‑déforestation).',
 }
 
 export default function RootLayout({

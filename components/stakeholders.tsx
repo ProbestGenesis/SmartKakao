@@ -126,7 +126,7 @@ export function Stakeholders() {
             Acteurs de la filière
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            SmartKakao sécurise les échanges entre tous les acteurs, en conservant une chaîne de preuves cohérente.
+            ChainCacao sécurise les échanges entre tous les acteurs, en conservant une chaîne de preuves cohérente.
           </p>
         </motion.div>
 
