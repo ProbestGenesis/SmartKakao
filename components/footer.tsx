@@ -33,16 +33,16 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-background border-t border-border">
+    <footer className="bg-foreground text-white  border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
               <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-xs font-bold text-accent-foreground">SK</span>
+                <span className="text-xs font-bold text-accent-foreground">CC</span>
               </div>
-              <span className="font-semibold">SmartKakao</span>
+              <span className="font-semibold">ChainCacao</span>
             </Link>
             <p className="text-sm text-muted-foreground">
               Traçabilité blockchain café‑cacao du Togo vers l’Europe, avec conformité EUDR.
@@ -58,7 +58,7 @@ export function Footer() {
                   <li key={link.label}>
                     <a
                       href={link.href}
-                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                      className="text-sm text-muted-foreground hover:text-white transition-colors"
                     >
                       {link.label}
                     </a>
@@ -72,16 +72,16 @@ export function Footer() {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © {currentYear} SmartKakao. Tous les droits réservés.
+              © {currentYear} ChainCacao. Tous les droits réservés.
             </p>
             <div className="flex gap-6">
-              <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <a href="#" className="text-sm text-muted-foreground hover:text-white transition-colors">
                 Twitter
               </a>
-              <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <a href="#" className="text-sm text-muted-foreground hover:text-white transition-colors">
                 LinkedIn
               </a>
-              <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <a href="#" className="text-sm text-muted-foreground hover:text-white transition-colors">
                 Facebook
               </a>
             </div>

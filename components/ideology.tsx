@@ -106,7 +106,7 @@ function Ideology() {
               )}
             >
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-2">
-                Les valeurs de SmartKakao
+                Les valeurs de ChainCacao
               </p>
               <h2 className="text-xl sm:text-2xl lg:text-5xl font-bold text-white leading-tight mb-3 drop-shadow-md">
                 {data[idx].title}

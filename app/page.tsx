@@ -11,11 +11,12 @@ import { Problem } from '@/components/problem'
 import { Process } from '@/components/process'
 import { Solution } from '@/components/solution'
 import { Stakeholders } from '@/components/stakeholders'
+import Team from '@/components/team'
 
 export const metadata = {
-  title: 'SmartKakao — Traçabilité blockchain café‑cacao (EUDR)',
+  title: 'ChainCacao — Traçabilité blockchain café‑cacao (EUDR)',
   description:
-    'SmartKakao assure une traçabilité complète et immuable de chaque lot (GPS, poids, photos), du producteur au marché européen, avec certificats EUDR et preuves cryptographiques.',
+    'ChainCacao assure une traçabilité complète et immuable de chaque lot (GPS, poids, photos), du producteur au marché européen, avec certificats EUDR et preuves cryptographiques.',
 }
 
 export default function Home() {
@@ -36,7 +37,8 @@ export default function Home() {
       <FAQ />
       {/* <Testimonials />*/}
       <CTA />
-      <Contact />
+      {/*<Contact />*/}
+      <Team />
       <Footer />
     </main>
   )

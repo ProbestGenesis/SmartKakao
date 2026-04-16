@@ -64,8 +64,8 @@ export function Contact() {
                 </div>
                 <div>
                   <div className="font-semibold text-foreground">Email</div>
-                  <a href="mailto:hello@smartkakao.tg" className="text-muted-foreground hover:text-accent transition-colors">
-                    hello@smartkakao.tg
+                  <a href="mailto:hello@chaincacao.tg" className="text-muted-foreground hover:text-accent transition-colors">
+                    hello@chaincacao.tg
                   </a>
                 </div>
               </div>

@@ -54,7 +54,7 @@ export function Solution() {
         {/* Photo — object-cover fills the frame, top-anchored for faces/crops */}
         <Image
           src={solutionApperçu}
-          alt="Aperçu de la solution SmartKakao"
+          alt="Aperçu de la solution ChainCacao"
           fill
           quality={75}
           loading="lazy"
@@ -104,7 +104,7 @@ export function Solution() {
             Prêt à sécuriser votre traçabilité&nbsp;?
           </h3>
           <p className="text-base sm:text-lg mb-8 opacity-80 max-w-xl mx-auto">
-            Déployez SmartKakao pour enregistrer, transférer, regrouper et certifier des lots café‑cacao, en conformité EUDR.
+            Déployez ChainCacao pour enregistrer, transférer, regrouper et certifier des lots café‑cacao, en conformité EUDR.
           </p>
           <Button className="bg-accent hover:bg-accent/90 text-accent-foreground font-medium h-12 px-8 text-sm">
             Planifier une démo

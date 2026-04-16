@@ -24,9 +24,9 @@ export function Header() {
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
           <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-            <span className="text-xs font-bold text-accent-foreground">SK</span>
+            <span className="text-xs font-bold text-accent-foreground">CC</span>
           </div>
-          <span className="font-semibold text-sm hidden sm:inline">SmartKakao</span>
+          <span className="font-semibold text-sm hidden sm:inline">ChainCacao</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -42,7 +42,7 @@ export function Header() {
           ))}
         </div>
 
-        <div className="flex items-center gap-4">
+        {/*<div className="flex items-center gap-4">
           <Button
             variant="outline"
             size="sm"
@@ -56,7 +56,7 @@ export function Header() {
             </Button>
           </Link>
 
-          {/* Mobile Menu Button */}
+         
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden"
@@ -64,7 +64,7 @@ export function Header() {
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
-        </div>
+        </div>*/}
 
         {/* Mobile Navigation */}
         {isOpen && (
