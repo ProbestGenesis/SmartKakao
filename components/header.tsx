@@ -16,7 +16,7 @@ export function Header() {
     { label: 'Conformité EUDR', href: '#eudr' },
     { label: 'Acteurs', href: '#actors' },
     { label: 'Avantages', href: '#benefits' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Contact', href: '#team' },
   ]
 
   return (

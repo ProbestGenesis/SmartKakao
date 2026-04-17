@@ -57,7 +57,7 @@ const defaultMembers: Member[] = [
     id: '4',
     name: 'NOVIVO O.',
     role: 'Data Architect',
-    bio: 'Validation des données terrain, .',
+    bio: 'Validation des données terrain.',
     skills: ['Python', 'Pandas', 'Postgres'],
     avatarColor: 'bg-accent/70',
   },
