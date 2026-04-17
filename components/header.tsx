@@ -30,7 +30,7 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center justify-center gap-8">
           {navItems.map((item) => (
             <a
               key={item.label}
@@ -65,6 +65,10 @@ export function Header() {
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>*/}
+
+        <div>
+
+        </div>
 
         {/* Mobile Navigation */}
         {isOpen && (

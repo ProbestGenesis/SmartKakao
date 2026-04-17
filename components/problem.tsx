@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'motion/react'
-import { AlertTriangle, FileSearch, Link2, ShieldCheck } from 'lucide-react'
+import { AlertTriangle, FileSearch, Link2, ShieldCheck, TrendingDown } from 'lucide-react'
 import { DecorativeBubbles } from './decorative-bubbles'
 
 const painPoints = [
@@ -9,25 +9,25 @@ const painPoints = [
     icon: FileSearch,
     title: 'Manque de preuves exploitables',
     description:
-      'Les données terrain (GPS, photos, documents) sont souvent dispersées, difficiles à auditer et fragiles face à la fraude.',
+      'Les données terrain (GPS, photos, documents) sont dispersées et difficiles à auditer. Résultat : moins de 5 % des exportations togolaises de cacao sont certifiées bio ou Fairtrade.',
   },
   {
     icon: Link2,
     title: 'Ruptures de traçabilité',
     description:
-      'Les transferts entre acteurs (producteur, coopérative, transformateur, exportateur) perdent l’historique ou le rendent invérifiable.',
+      'Les transferts entre acteurs perdent l’historique ou le rendent invérifiable. Dès 2025, le règlement EUDR impose une traçabilité géographique obligatoire pour tout cacao importé dans l’UE.',
   },
   {
     icon: AlertTriangle,
-    title: 'Risque de non‑conformité EUDR',
+    title: 'Fraudes et non‑conformité',
     description:
-      'Sans chaîne de preuves claire anti‑déforestation, l’accès au marché européen devient plus lent, plus coûteux, voire bloqué.',
+      'Les pesées frauduleuses causent des pertes estimées à 30‑40 millions USD par an. Sans chaîne de preuves claire, l’accès au marché européen devient plus lent, plus coûteux, voire bloqué.',
   },
   {
-    icon: ShieldCheck,
+    icon: TrendingDown,
     title: 'Perte de valeur pour les producteurs',
     description:
-      'L’absence de transparence limite la négociation et l’accès au premium, malgré des pratiques de qualité sur le terrain.',
+      'Plus de 40 000 familles togolaises dépendent du café et cacao, mais l’agriculteur ne perçoit que 15 à 25 % de la valeur finale de son produit à l’export, faute de transparence et de certifications.',
   },
 ]
 
