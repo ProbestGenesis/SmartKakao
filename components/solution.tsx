@@ -3,9 +3,9 @@
 import Image from "next/image"
 import { motion } from "motion/react"
 import { Button } from '@/components/ui/button'
-import solutionApperçu from "@/public/assets/apperçu.png"
 import { UseCases } from "./use-cases"
 import { DecorativeBubbles } from "./decorative-bubbles"
+import solutionApperçu from "@/assets/chaincaco.png"
 
 const steps = [
   {
@@ -58,7 +58,7 @@ export function Solution() {
           fill
           quality={75}
           loading="lazy"
-          className="object-cover object-top"
+          className="object-cover "
           sizes="100vw"
         />
 

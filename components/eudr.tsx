@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'motion/react'
-import { FileCheck2, MapPin, Shield, Fingerprint } from 'lucide-react'
+import { FileCheck2, MapPin, Shield, Fingerprint, ArrowUpRight } from 'lucide-react'
 import { DecorativeBubbles } from './decorative-bubbles'
 
 const pillars = [
@@ -24,6 +24,21 @@ const pillars = [
     icon: Shield,
     title: 'Traçabilité sans rupture',
     description: 'Transferts, regroupements et expédition conservent le lien entre lots sources et lots regroupés.',
+  },
+]
+
+const govLinks = [
+  {
+    label: 'Commission Européenne (EUDR)',
+    href: 'https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en',
+  },
+  {
+    label: 'CCFCC Togo (Café‑Cacao)',
+    href: 'https://ccfcc.tg/',
+  },
+  {
+    label: 'Ministère de l’Agriculture (Togo)',
+    href: 'https://agriculture.gouv.tg/',
   },
 ]
 
@@ -89,12 +104,36 @@ export function Eudr() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.12 }}
           viewport={{ once: true, amount: 0.25 }}
-          className="mt-10 rounded-2xl border border-border bg-background/60 p-6 sm:p-8"
+          className="mt-10 flex flex-col md:flex-row gap-6"
         >
-          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Objectif: une <span className="text-foreground font-medium">traçabilité complète et immuable</span> de la parcelle
-            jusqu’à l’importateur, avec des éléments de preuve directement consultables.
-          </p>
+          <div className="flex-1 rounded-2xl border border-border bg-background/60 p-6 sm:p-8">
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+              Objectif: une <span className="text-foreground font-medium">traçabilité complète et immuable</span> de la parcelle
+              jusqu’à l’importateur, avec des éléments de preuve directement consultables.
+            </p>
+          </div>
+
+          <div className="md:w-72 space-y-3">
+            <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground px-1">
+              Ressources officielles
+            </p>
+            <div className="grid gap-2">
+              {govLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between p-3 rounded-xl border border-border bg-background/40 hover:bg-accent/5 hover:border-accent/20 transition-all group"
+                >
+                  <span className="text-sm font-medium text-foreground/80 group-hover:text-accent transition-colors">
+                    {link.label}
+                  </span>
+                  <ArrowUpRight className="w-4 h-4 text-muted-foreground group-hover:text-accent transition-colors" />
+                </a>
+              ))}
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

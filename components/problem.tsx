@@ -9,25 +9,25 @@ const painPoints = [
     icon: FileSearch,
     title: 'Manque de preuves exploitables',
     description:
-      'Les données terrain (GPS, photos, documents) sont dispersées et difficiles à auditer. Résultat : moins de 5 % des exportations togolaises de cacao sont certifiées bio ou Fairtrade.',
+      'Les données terrain (GPS, photos, documents) restent souvent informelles ou dispersées, rendant les audits complexes et coûteux. Sans preuves numériques robustes, moins de 5 % des exportations togolaises accèdent aux primes de certification bio ou Fairtrade.',
   },
   {
     icon: Link2,
     title: 'Ruptures de traçabilité',
     description:
-      'Les transferts entre acteurs perdent l’historique ou le rendent invérifiable. Dès 2025, le règlement EUDR impose une traçabilité géographique obligatoire pour tout cacao importé dans l’UE.',
+      "Chaque intermédiaire est un maillon où l'information risque de se perdre ou d'être altérée. Avec l'échéance EUDR de 2025, une rupture de traçabilité n'est plus seulement un défaut logistique, c'est un risque d'interdiction légale d'accès au marché européen.",
   },
   {
     icon: AlertTriangle,
     title: 'Fraudes et non‑conformité',
     description:
-      'Les pesées frauduleuses causent des pertes estimées à 30‑40 millions USD par an. Sans chaîne de preuves claire, l’accès au marché européen devient plus lent, plus coûteux, voire bloqué.',
+      "L'opacité favorise les pesées frauduleuses et les mélanges de lots, causant des pertes sèches estimées à 40 millions USD par an. Sans une chaîne de preuves immuable, la réputation de l'origine entière et la confiance des acheteurs sont compromises.",
   },
   {
     icon: TrendingDown,
     title: 'Perte de valeur pour les producteurs',
     description:
-      'Plus de 40 000 familles togolaises dépendent du café et cacao, mais l’agriculteur ne perçoit que 15 à 25 % de la valeur finale de son produit à l’export, faute de transparence et de certifications.',
+      "Bien que 40 000 familles dépendent de cette culture au Togo, l'absence de transparence empêche une redistribution équitable. L'agriculteur reste le maillon le plus vulnérable, captant moins d'un quart de la valeur finale du produit à l'export.",
   },
 ]
 
@@ -71,7 +71,7 @@ export function Problem() {
 
             <div className="rounded-2xl border border-accent/20 bg-accent/5 p-6">
               <p className="text-sm text-foreground/90 leading-relaxed">
-                ChainCacao est né pour transformer des informations éparses en une{' '}
+                <strong className="text-lg text-primary">ChainCacao </strong> est né pour transformer des informations éparses en une{' '}
                 <span className="font-semibold">chaîne de preuves</span> consultable instantanément (QR/ID),
                 de la parcelle de l’agriculteur jusqu’à l’importateur européen.
               </p>
