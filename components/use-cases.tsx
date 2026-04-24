@@ -17,18 +17,19 @@ const useCases = [
     description:
       'Signature numérique du transfert de propriété (agriculteur → coopérative), avec horodatage et pièces justificatives pour éviter les fraudes.',
   },
+   {
+    icon: Layers,
+    title: 'Regroupement de lots',
+    description:
+      'Création de lots regroupés tout en conservant la traçabilité individuelle des lots sources, garantissant conformité EUDR et certifications.',
+  },
   {
     icon: QrCode,
     title: 'Contrôle par l’importateur',
     description:
       'Consultation instantanée de l’historique complet via QR code ou identifiant unique, avant achat ou dédouanement en Europe.',
   },
-  {
-    icon: Layers,
-    title: 'Regroupement de lots',
-    description:
-      'Création de lots regroupés tout en conservant la traçabilité individuelle des lots sources, garantissant conformité EUDR et certifications.',
-  },
+ 
 ]
 
 export function UseCases() {
