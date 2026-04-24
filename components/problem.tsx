@@ -9,7 +9,7 @@ const painPoints = [
     icon: FileSearch,
     title: 'Manque de preuves exploitables',
     description:
-      'Les données terrain (GPS, photos, documents) restent souvent informelles ou dispersées, rendant les audits complexes et coûteux. Sans preuves numériques robustes, moins de 5 % des exportations togolaises accèdent aux primes de certification bio ou Fairtrade.',
+      'Les données terrain (GPS, photos, documents) restent souvent informelles ou dispersées, rendant les audits complexes et coûteux. Moins de 5 % des exportations togolaises accèdent aux primes de certification bio ou Fairtrade.',
   },
   {
     icon: Link2,
@@ -21,7 +21,7 @@ const painPoints = [
     icon: AlertTriangle,
     title: 'Fraudes et non‑conformité',
     description:
-      "L'opacité favorise les pesées frauduleuses et les mélanges de lots, causant des pertes sèches estimées à 40 millions USD par an. Sans une chaîne de preuves immuable, la réputation de l'origine entière et la confiance des acheteurs sont compromises.",
+      "Les pesées frauduleuses et les mélanges de lots, causant des pertes estimées à 40 millions USD par an. La réputation de l'origine et la confiance des acheteurs sont compromises.",
   },
   {
     icon: TrendingDown,
