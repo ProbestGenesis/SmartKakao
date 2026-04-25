@@ -1,13 +1,12 @@
 'use client'
 
-import { motion } from "motion/react"
 import { Button } from '@/components/ui/button'
-import { ArrowRight, Star } from 'lucide-react'
-import appleBadge from "@/public/assets/appleStore.svg"
-import googleBadge from "@/public/assets/googlePlay.svg"
-import Image from "next/image"
-import { DecorativeBubbles } from "./decorative-bubbles"
-
+import appleBadge from '@/public/assets/appleStore.svg'
+import googleBadge from '@/public/assets/googlePlay.svg'
+import { ArrowRight } from 'lucide-react'
+import { motion } from 'motion/react'
+import Image from 'next/image'
+import { DecorativeBubbles } from './decorative-bubbles'
 
 /* ── Mock review avatars ────────────────────────────────────────────── */
 const avatars = [
@@ -40,7 +39,6 @@ export function CTA() {
           viewport={{ once: true, amount: 0.2 }}
           className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center"
         >
-
           {/* ── LEFT — main CTA content ───────────────────────────────── */}
           <div className="space-y-8">
             <div className="space-y-4">
@@ -51,8 +49,8 @@ export function CTA() {
               </h2>
               <p className="text-lg text-background/70 leading-relaxed max-w-lg">
                 Rejoignez des centaines de producteurs et d&apos;acheteurs qui utilisent déjà{' '}
-                <strong className="text-background/90">ChainCacao</strong> pour sécuriser la traçabilité,
-                accélérer la vérification et faciliter la conformité EUDR.
+                <strong className="text-background/90">ChainCacao</strong> pour sécuriser la
+                traçabilité, accélérer la vérification et faciliter la conformité EUDR.
               </p>
             </div>
 
@@ -94,11 +92,13 @@ export function CTA() {
                 Application mobile
               </p>
               <h3 className="text-2xl sm:text-3xl font-bold leading-snug">
-                Gérez vos récoltes<br />
+                Gérez vos récoltes
+                <br />
                 depuis votre poche
               </h3>
               <p className="text-background/60 text-sm leading-relaxed">
-                Enregistrez vos lots, suivez les transferts, consultez les certificats et partagez des preuves en mobilité.
+                Enregistrez vos lots, suivez les transferts, consultez les certificats et partagez
+                des preuves en mobilité.
               </p>
             </div>
 
@@ -133,7 +133,7 @@ export function CTA() {
                 aria-label="Télécharger sur Google Play"
                 className="block w-full h-12 hover:opacity-80 active:scale-[0.98] transition-all"
               >
-               <Image src={googleBadge} alt="Google Play" width={120} height={40} />
+                <Image src={googleBadge} alt="Google Play" width={120} height={40} />
               </a>
             </div>
 
@@ -150,7 +150,7 @@ export function CTA() {
                   </span>
                 ))}
               </div>
-              {/* Stars + label */}
+              {/* Stars + label 
               <div>
                 <div className="flex gap-0.5">
                   {Array.from({ length: 5 }).map((_, i) => (
@@ -160,10 +160,9 @@ export function CTA() {
                 <p className="text-[11px] text-background/50 mt-0.5">
                   +240 acteurs satisfaits
                 </p>
-              </div>
+              </div>*/}
             </div>
           </motion.div>
-
         </motion.div>
       </div>
     </section>

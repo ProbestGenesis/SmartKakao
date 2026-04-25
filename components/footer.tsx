@@ -1,6 +1,8 @@
 'use client'
 
 import Link from 'next/link'
+import logo from "@/public/assets/logo.png"
+import Image from 'next/image'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -39,10 +41,14 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-xs font-bold text-accent-foreground">CC</span>
-              </div>
-              <span className="font-semibold">ChainCacao</span>
+              <Image
+                src={logo}
+                alt="ChainCacao"
+                width={40}
+                height={40}
+                className="rounded-lg"
+              />
+              <span className="font-semibold text-sm hidden sm:inline">ChainCacao</span>
             </Link>
             <p className="text-sm text-muted-foreground">
               Traçabilité blockchain café‑cacao du Togo vers l’Europe, avec conformité EUDR.

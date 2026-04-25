@@ -41,7 +41,7 @@ const defaultMembers: Member[] = [
     id: '2',
     name: 'Dimon A.',
     role: 'Lead Frontend web',
-    bio: "Design d'interfaces accessibles et performantes pour terrains à faible connectivité.",
+    bio: "Design d'interfaces accessibles et performantes.",
     skills: ['React', 'Tailwind', 'UX'],
     avatarColor: 'bg-cacao-500',
   },
